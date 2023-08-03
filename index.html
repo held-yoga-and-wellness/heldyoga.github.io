@@ -3,11 +3,11 @@ layout: home-page
 ---
 {% include calculate_relative_base.html %}
 
-<div class="post-card-video">
+<!--<div class="post-card-video">
   <video id="background-video" autoplay loop muted>
     <source src="assets/img/oceanmovie_MOV_AdobeExpress.mp4" type="video/mp4">
   </video>
-</div>
+</div>-->
 
 <!--<ol class="post-card-description clearfix">
       <div class="post-card-body2">
@@ -51,43 +51,24 @@ layout: home-page
 </ol>-->
 
 <div class = "post-card-body3">
-<p class="post-card-title-and-meta">
-  <br>
-          <a href="about2.html" class="post-card-link">
             <p class='bigheader'>
-              Tiny cells, global impact.
+              Current Series : <b>Yoga for Scientists</b><br>(Free! Sign up for announcements <a href = "https://forms.gle/dvnLE977mjqKiZxe7">here</a>)
+              <br><br>
+              Coming soon: <b>Goddess Power workshop</b><br>9am-1pm, Oct 29 2023 Full moon!<br> In person in Zurich. Register your interest <a href = "https://forms.gle/HzQwjsMWf1jGz2TcA">here</a>
             </p>
-          </a>
-          <a href = "ourperspective.html" class="post-card-link">
+          </div>
+            <div class = "post-card-body3">
             <p class='smallheader'>
-              We study the inner lives of marine microbes and how they<br>contribute to the health of the ocean. 
+              I teach energy-balancing, nurturing Vinyasa yoga in the lineage of Dr. Liz Lindh and T.K.S. Desikachar. I combines scientific and intuitive knowledge to help my students connect with the forces within and around them. A focus of my yoga is counteracting the physical, mental, and spiritual stressors encountered by scientists, academics, and other intellectuals.
             </p>
-          </a>
-          <a href = "methodsweuse.html" class="post-card-link">
-            <p class='smallheader'><a href = "methods.html" class="post-card-link">
-              Our specialities include environmental proteomics, systems biology, <br>quantitative biology, and ocean biogeochemistry. 
+            <p class='smallheader'>
+              My personal mission is to help people to be better stewards of the Earth, themselves, and each other. I achieve this by exploring the connections between life and the Earth (through my work as a marine biogeochemist), empowering the next generation of leaders and thinkers in the environmental sciences (as an assistant professor at the University of Southern California), and cultivating a culture of wellness in academia (as a yoga teacher and holder of space). 
             </p>
-          </a>
+            <p class='smallheader'>
+              I am a RYT-200. I also hold a PhD in microbial biogeochemistry and chemical oceanography from MIT and the Woods Hole Oceanographic Institution.  I am currently based in Zurich, Switzerland and from January 2024 will be in the Los Angeles area. 
+            </p>
+            <p class='smallheader'>
+              You can <a href = "mailto: heldyogaandwellness@gmail.com"> contact me</a> about private yoga/wellness classes and workshops for yourself, or for a group. 
+            </p>
           <br>
 </div>
-<ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
-  {% include remove_double_slash.html %}
-
-  <li>
-    <div class="post-card">
-      <a href="{{ post_url }}" title="{{ post.title }}" class="post-card-image" style="background: url('{{ relativebase }}assets/img/{{ post.img }}') center no-repeat; background-size: cover;">
-      </a>
-      <div class="post-card-body">
-        <p class="post-card-title-and-meta">
-          
-          <a href="{{ post_url }}" class="post-card-link">
-          {{ post.title }}
-          </a>
-          {% include post_meta.html type="post-card-meta" date="none" %}
-        </p>
-      </div>
-    </div>
-  </li>
-  {% endfor %}
-</ol>

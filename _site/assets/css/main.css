@@ -3,17 +3,17 @@
 /* Main Color palette and fonts */
 
 html {
-  --accent:       #3F616F;    /* accent     */
-  --accent-dark:  #241938;    /* accent 2   */
-  --main:         #3F616F;    /* main color */
-  --main-dim:     #3F616F;    /* dimmed version of main color */
-  --text:         #241938;
+  --accent:       #626C58;    /* accent     */
+  --accent-dark:  #626C58;    /* accent 2   */
+  --main:         #C7D3BC;    /* main color */
+  --main-dim:     #C7D3BC;    /* dimmed version of main color */
+  --text:         #626C58;
   --grey1:        #5F5E58;
   --grey2:        #8D897C;
   --grey3:        #B4B3A7;
   --grey4:        #DAD7D2;
   --grey5:        #F0EFED ; 
-  --background:   #ffffff;
+  --background:   #C7D3BC;
   --shadow:       rgba(32,30,30,.3);
   --github:       #333;
   --font1: 'Lora', charter, Georgia, Cambria, 'Times New Roman', Times, serif;/* body text */
@@ -192,6 +192,14 @@ sup {
 
 img {
   border-style: none;
+}
+
+img.logoimg {
+  border-style: none;
+  width: 85%;
+  position: relative;
+  align: center;
+
 }
 
 /* Forms
@@ -430,6 +438,12 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+img2 {
+  height: auto;
+  max-width: 50%;
+}
+
 a {
     color: var(--text);
     -webkit-transition: all 1s;
@@ -565,8 +579,7 @@ svg {
   font-family: var(--font2), sans-serif;
   padding: 0px 0;
   background-color: var(--background);
-  -webkit-box-shadow: 0px -5px 15px var(--shadow);
-          box-shadow: 0px -5px 15px var(--shadow);
+
 }
 .main-header .header-flex {
   display: -webkit-box;
@@ -583,12 +596,13 @@ svg {
           align-items: center;
 }
 .main-header .logo {
-  width: 65%;
-  height: 30%;
+  width: 100%;
+  height: 100%;
   position: relative;
   text-align: center;
   color:var(--main);
 }
+
 .main-header .logo a {
   text-decoration: none;
   text-transform: uppercase;
@@ -908,7 +922,7 @@ svg.menu-icon-house {
 }
 
 .post-card-body3 {
-  background-color: #00000099;
+  background-color: #00000009;
 
 }
 .post-card-tags{
@@ -916,7 +930,7 @@ svg.menu-icon-house {
 }
 
 .bigheader {
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -2071,7 +2085,7 @@ a.read-more:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .main-header .logo {
-  width: 90%;
+  width: 100%;
 }
   .main-header .logo a {
     font-size: 24px;
@@ -2126,7 +2140,7 @@ a.read-more:hover {
     font-size: 14px;
   }
   .main-header .logo {
-  width: 100%;
+  width: 50%;
 }
   .main-header .logo a {
     font-size: 21px;
