@@ -2084,8 +2084,8 @@ a.read-more:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .main-header .logo {
-  height: 90%;
-    minsize: 300px;
+  height: 100%;
+  width: 100%
 }
   .main-header .logo a {
     font-size: 24px;
