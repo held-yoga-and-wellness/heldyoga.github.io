@@ -596,7 +596,7 @@ svg {
           align-items: center;
 }
 .main-header .logo {
-  height: 90%;
+  width: 50%;
   position: relative;
   text-align: center;
   color:var(--main);
@@ -2140,7 +2140,7 @@ a.read-more:hover {
     font-size: 14px;
   }
   .main-header .logo {
-  width: 50%;
+  width: 100%;
 }
   .main-header .logo a {
     font-size: 21px;
